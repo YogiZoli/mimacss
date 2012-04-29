@@ -1,0 +1,459 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* Mima Fonts */
+@font-face {
+  font-family: 'helvethl';
+  src: url('helvethl.ttf') format('truetype');
+         url('helvethl.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'helvnhul';
+  src: url('helvnhul.ttf') format('truetype');
+         url('helvnhul.eot') format('embedded-opentype');
+}
+
+body {
+  font-family: 'helvnhul', Helvetica, sans-serif;
+  background-color: #ECECEC;
+  text-transform:lowercase;
+  letter-spacing:0.2em;
+}
+
+#page-title {
+  letter-spacing:0.2em;
+}
+
+footer {
+  font-family: 'helvethl', Helvetica, sans-serif;
+  font-size:11px;
+  text-align:center;
+  letter-spacing:0.1em;
+  text-indent:10%;
+  margin-top:3%;
+}
+
+#node-page-4 p, #page-title {
+  font-family: 'helvnhul', Helvetica, serif;
+}
+.field-content p {
+  font-family: 'helvnhul', Helvetica, serif;
+}
+
+/* Mima Fonts */
+
+/* Minden ami Menu*/
+
+.menu {
+  font-family: 'helvnhul', Helvetica, sans-serif;
+  text-transform:lowercase;
+/*  border-left:10px black groove;
+  border-style:groove; */
+  font-size:1.2em;
+}
+
+ul li.leaf {
+  font-family: 'helvnhul', Helvetica, sans-serif;
+}
+
+li a.active {
+  font-family: 'helvethl', Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+ul li.expanded, ul li.collapsed,  ul li.leaf{
+  list-style-image:none;
+  list-style-type: none;
+}
+
+ul .menu li, ul li a, ul li.leaf a, ul li.collapsed, ul li.expanded, ul li.leaf {
+  color:black;
+}
+
+/* Minden ami Menu VEGE */
+
+.views-field-body > .field-content {
+  text-align:justify;
+  float:left;
+  max-width:240px;
+  width:45%;
+  margin-left:2%;
+  padding-right:2%;
+  border-right: 1px grey solid;
+}
+
+.views-field-field-engdesc > .field-content {
+  text-align:justify;
+  float:left;
+  max-width:240px;
+  width:45%;
+  margin-left:2%;
+  margin-right:2%;
+}
+
+.views-field-field-mainimage {
+  margin-bottom:15px;
+}
+
+
+#logo img,#block-block-1 img{
+    min-width: 80px;
+    max-width: 160px;
+    width:35%;
+  	margin-bottom:5%;
+        margin-top: 10px;
+        margin-left: -10px;
+}
+
+.node .field-name-field-projectimages .field-item a{
+    float: left;
+    margin-left: 1%;
+}
+
+.form-textarea-wrapper textarea {
+  width:60%
+}
+
+.block-system-main-menu .block-inner{
+  color:black;
+  position:fixed;
+  left:0;
+  border:none;
+/*  border-left: 20px solid gray; */
+  margin-top:3%;
+  margin-bottom:3%;
+}
+#region-content{
+  position:relative;
+}
+
+/*ul.menu {
+  -webkit-border-image: url('csik.png');
+  -o-border-image: url('csik.png');
+  -moz-border-image: url('csik.png');
+  -ms-border-image: url('csik.png');
+  border-image: url('csik.png');
+  border-left: 20px solid gray;
+}*/
+
+/* Dobozok */
+
+.mimadoboz img{
+    margin: 1%;
+    min-width: 50px;
+    width: 65%;
+}
+.mimadoboz{
+    float:left;
+    margin:4%;
+    width: 15%;
+}
+
+/* Dobozok */
+
+a:link, a:visited {
+   text-decoration: none;
+   color: black;
+}
+
+.container-12 {
+    margin-left: 1%;
+    width: 95%;
+}
+
+/* Contact Form */
+
+#contactgreybar{
+    border-bottom: 55px solid grey;
+    width: 75%;
+}
+
+#contactaddress{
+    border-top: 2px gray dashed;
+    padding-top:3%;
+    margin-top: 5%;
+    width:75%;
+}
+
+#contactustitle span {
+    font-size: 750%;
+    margin-top:-30%;
+    top:20px;
+}
+
+.contactformbody {
+  color:#808080;
+  font-size:2em;
+  letter-spacing: 0.1em;
+}
+
+.contactformbody, #contactustitle {
+    font-family: 'helvnhul', Helvetica, sans-serif;
+}
+
+/* Contact Form */
+
+/* Language Switcher */
+
+.translation_en a,.translation_hu a{
+    display: none;
+}
+
+ul.language-switcher-locale-url{
+    list-style: none;
+    width: 110%;
+}
+.language-switcher-locale-url li{
+    float: left;
+    margin:1%;
+	margin-right:4%;
+}
+#block-locale-language, #region-header-first{
+    float: right;
+    margin-top: -5px;
+}
+
+.hu.active{
+    background-image: url('../HUNaktiv.png');
+    background-size: 24px;   
+}
+
+.hu a.active img{
+    visibility:hidden;
+}
+
+.en.active{
+    background-image: url('../ENGaktiv.png');
+    background-size: 24px;    
+}
+
+.en a.active img{
+    visibility:hidden;
+}
+/* Language Switcher */
+
+img.adaptive-image {
+   margin: 0 0 2%;
+   max-width: 80%;
+   padding-top: 0;
+}
+
+/* Menu es Mas Full responsive cuccok */
+
+/* Smartphones (portrait and landscape) AND ONLY THESE 2 */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+#contactustitle span {
+    font-size: 250%;
+}
+.block-system-main-menu .block-inner{
+  position:relative;
+/*  margin-left: -5%;*/
+}
+
+footer {
+  font-size:10px;
+  letter-spacing:0.05em;
+  margin-top:15%;
+}
+
+
+}
+
+/* Smartphones (landscape) AND ABOVE EVERYTHING */
+@media only screen
+and (min-width : 321px)
+and (max-width : 767px){
+#contactustitle span {
+    font-size: 400%;
+}
+.block-system-main-menu .block-inner{
+  /*position:fixed;*/
+  position: relative;
+}
+#region-content{
+    /*left:26%;*/
+  position:relative;
+}
+footer {
+  font-size:10px;
+  letter-spacing:0.05em;
+  margin-top:5%;
+}
+
+}
+
+/* Smartphones (portrait) ONLY ALLO TELEFON */
+@media only screen
+and (max-width : 320px) {
+#contactustitle span {
+    font-size: 250%;
+}
+.block-system-main-menu .block-inner{
+  position:relative;
+/*  margin-left: -5%; */
+}
+.contactformbody {
+  font-size:1.5em;
+  letter-spacing:0.1em;
+}
+footer {
+  font-size:10px;
+  letter-spacing:0.05em;
+  margin-top:15%;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+#contactustitle span {
+    font-size: 750%;
+}
+.block-system-main-menu .block-inner{
+  position:fixed;
+}
+#region-content{
+  position:relative;
+  left:24%;
+}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+#contactustitle span {
+    font-size: 750%;
+}
+.block-system-main-menu .block-inner{
+  position:fixed;
+}
+#region-content{
+  left:26%;
+}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+#contactustitle span {
+    font-size: 750%;
+}
+.block-system-main-menu .block-inner{
+  position:fixed;
+}
+#region-content{
+  left:26%;
+}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1024px) {
+#contactustitle span {
+    font-size: 750%;
+}
+.block-system-main-menu .block-inner{
+  position:fixed;
+}
+#region-content{
+  left:24%;
+}
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+#contactustitle span {
+    font-size: 750%;
+}
+.block-system-main-menu .block-inner{
+  position:fixed;
+}
+#region-content{
+  left:24%;
+}
+}
+
+@media only screen
+and (max-device-width : 480px)
+and (max-width : 320px) {
+  .block-system-main-menu .block-inner{
+    position:relative;
+/*	margin-left:-5%; */
+  }
+}
+
+@media only screen
+and (max-device-width : 320px)
+and (max-width : 320px) {
+  .block-system-main-menu .block-inner{
+    position:relative;
+/*	margin-left:-5%;*/
+  }
+}
+
+/*
+@media only screen
+and (min-width : 320px) 
+and (max-width : 320px) {
+.block-system-main-menu .block-inner{
+  position:relative;
+}	
+}
+*/
+@media (max-width: 480px) {
+  .block-system-main-menu .block-inner{
+    position:relative;
+/*	margin-left:-5%; */
+  }
+}
+
+@media (min-width: 767px){
+ #region-content{
+  left:26%;
+}
+} 
+/* Flexslider navigation*/
+
+.flex-direction-nav li a.prev{
+    background-image: url("../bal_icon.png");
+    background-size: 20px;
+    left:49%;
+    width: 20px;
+    height: 20px;
+    margin-left:-40px;
+}
+.flex-direction-nav li a.prev:hover{
+    background-image: url("../bal_iconszurke.png");
+}
+
+.flex-direction-nav li a.next{
+    background-image: url("../jobb_icon.png");
+    background-position:0px;
+    background-size: 20px;
+    right:49%;
+    width: 20px;
+    height: 20px;
+    margin: -13px 0 0 40px;
+}
+.flex-direction-nav li a.next:hover{
+    background-image: url("../jobb_iconszurke.png");
+}
+
+.flex-direction-nav li{
+    position: absolute;
+    bottom:5%;
+    margin-left:52%;
+}
+
+.flex-control-nav {
+    display: none;
+}
